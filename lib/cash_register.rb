@@ -10,7 +10,7 @@ class CashRegister
   end
   
   def add_item(item_name, price, quantity = 1)
-    #will add the item to the items based on its value of quantity
+    #will add item_name to @items based on its value of quantity
       quantity.times do 
         @items << item_name
     end
