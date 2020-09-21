@@ -36,8 +36,11 @@ class CashRegister
   #@total -= @price         #subtracts last item from total
   #@total -= @last_transaction    #returns total to 0
   
-  @last_transaction -= @price
-  @last_transaction -= @last_transaction
+  #@last_transaction -= @price
+  #@last_transaction -= @last_transaction
+  
+  @total = @total - @price
+  @total - @total
   end
   
 end
