@@ -33,8 +33,10 @@ class CashRegister
   
   def void_last_transaction
   binding.pry
-  @total -= @price         #subtracts last item from total
-  @total -= @last_transaction    #returns total to 0
+  #@total -= @price         #subtracts last item from total
+  #@total -= @last_transaction    #returns total to 0
+  
+  @last_transaction -= @price
   end
   
 end
