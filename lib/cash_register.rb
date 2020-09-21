@@ -17,8 +17,8 @@ class CashRegister
 
     @item_name = item_name
     @price = price
-    @total += price*quantity
-    @last_transaction = @total
+    @last_transaction= price*quantity
+    #@last_transaction = @total
     @last_transaction
   end
   
